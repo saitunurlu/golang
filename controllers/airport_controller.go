@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
-	cError "github.com/couchbase-examples/golang-quickstart/errors"
-	"github.com/couchbase-examples/golang-quickstart/models"
-	services "github.com/couchbase-examples/golang-quickstart/service"
+	cError "github.com/saitunurlu/golang/errors"
+	"github.com/saitunurlu/golang/models"
+	services "github.com/saitunurlu/golang/service"
 
 	"github.com/couchbase/gocb/v2"
 	"github.com/gin-gonic/gin"
@@ -210,7 +210,6 @@ func (ac *AirportController) GetDirectConnections() gin.HandlerFunc {
 		if err != nil {
 			offset = 0
 		}
-
 
 		// Use the common method to execute the query and return the results
 		queryResult, err := ac.AirportService.ListDirectConnection(airport, limit, offset)

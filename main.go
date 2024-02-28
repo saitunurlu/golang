@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/couchbase-examples/golang-quickstart/controllers"
-	_ "github.com/couchbase-examples/golang-quickstart/controllers"
-	"github.com/couchbase-examples/golang-quickstart/db"
-	_ "github.com/couchbase-examples/golang-quickstart/docs"
-	"github.com/couchbase-examples/golang-quickstart/routes"
-	services "github.com/couchbase-examples/golang-quickstart/service"
 	"github.com/gin-gonic/gin"
+	"github.com/saitunurlu/golang/controllers"
+	_ "github.com/saitunurlu/golang/controllers"
+	"github.com/saitunurlu/golang/db"
+	_ "github.com/saitunurlu/golang/docs"
+	"github.com/saitunurlu/golang/routes"
+	services "github.com/saitunurlu/golang/service"
 )
 
 // @title Golang Quickstart using Gin Gonic

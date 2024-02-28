@@ -4,9 +4,9 @@ import (
 	"errors"
 	"net/http"
 
-	cError "github.com/couchbase-examples/golang-quickstart/errors"
-	"github.com/couchbase-examples/golang-quickstart/models"
-	services "github.com/couchbase-examples/golang-quickstart/service"
+	cError "github.com/saitunurlu/golang/errors"
+	"github.com/saitunurlu/golang/models"
+	services "github.com/saitunurlu/golang/service"
 
 	"github.com/couchbase/gocb/v2"
 	"github.com/gin-gonic/gin"

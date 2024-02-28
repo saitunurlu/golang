@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/couchbase-examples/golang-quickstart/models"
+	"github.com/saitunurlu/golang/models"
 
 	"github.com/couchbase/gocb/v2"
 )
@@ -12,7 +12,7 @@ type IAirlineService interface {
 	UpdateAirline(string, *models.Airline) error
 	DeleteAirline(string) error
 	ListAirlines(string, int, int) ([]models.Airline, error)
-	ListAirlinesToAirport(string, int,int) ([]models.Airline, error)
+	ListAirlinesToAirport(string, int, int) ([]models.Airline, error)
 }
 
 type AirlineService struct {

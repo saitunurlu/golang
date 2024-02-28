@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/couchbase-examples/golang-quickstart/models"
 	"github.com/couchbase/gocb/v2"
+	"github.com/saitunurlu/golang/models"
 )
 
 type ICategorysService interface {

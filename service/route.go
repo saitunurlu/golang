@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/couchbase-examples/golang-quickstart/models"
+	"github.com/saitunurlu/golang/models"
 
 	"github.com/couchbase/gocb/v2"
 )

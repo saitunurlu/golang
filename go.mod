@@ -1,4 +1,4 @@
-module F:\mango-app\backend\src
+module github.com/saitunurlu/golang
 
 go 1.22
 
