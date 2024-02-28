@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"github.com/couchbase-examples/golang-quickstart/controllers"
+	"github.com/saitunurlu/golang/controllers"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
