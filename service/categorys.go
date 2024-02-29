@@ -31,12 +31,15 @@ func (s *CategorysService) CreateCategorys(docKey string, data *models.Categorys
 }
 
 func (s *CategorysService) GetCategorys(docKey string) (*models.Categorys, error) {
-	getResult, err := s.scope.Collection(s.collectionName).Get(docKey, nil)
+	query := gocb.NewN1qlQuery("SELECT * FROM `" + s.collectionName + "` WHERE META().id = $1")
+	params := []interface{}{docKey}
+	rows, err := s.scope.ExecuteN1qlQuery(query, params)
 	if err != nil {
 		return nil, err
 	}
+
 	var categorysData models.Categorys
-	if err := getResult.Content(&categorysData); err != nil {
+	if err := rows.One(&categorysData); err != nil {
 		return nil, err
 	}
 	return &categorysData, nil
